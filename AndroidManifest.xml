@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ericklima.descubraonumero">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/CustomTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registro"
+            android:label="Registre-se!"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".Facil"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+        </activity>
+        <activity
+            android:name=".Moderado"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+        </activity>
+        <activity
+            android:name=".Gotcha"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light">
+
+        </activity>
+        <activity
+            android:name=".InfoScreen"
+            android:parentActivityName=".Registro"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Registro">
+
+            </meta-data>
+        </activity>
+
+        <activity
+            android:name=".Dificil"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="© 2017 HRC Systems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignBottom="@+id/botaoLogo" />
+
+    <Button
+        android:id="@+id/botaoInsta"
+        android:background="@drawable/instagram"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:elevation="15dp"
+        android:layout_above="@+id/botaoFace"
+        android:layout_alignStart="@+id/botaoFace"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:text="Siga-me nas redes sociais!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_marginBottom="34dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_above="@+id/textView7"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/botaoGit"
+        android:background="@drawable/github"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignTop="@+id/botaoInsta"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:text="Universidade Federal do Espírito Santo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <TextView
+        android:text="Engenharia de Computação"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="limahrc@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <TextView
+        android:text="Erick Lima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/imageView" />
+
+    <ImageView
+        app:srcCompat="@drawable/developer"
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_marginBottom="18dp"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Versão: 1.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_toEndOf="@+id/botaoLogo" />
+
+    <TextView
+        android:text="Descubra O Número!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_alignTop="@+id/botaoLogo"
+        android:layout_toEndOf="@+id/botaoLogo" />
+
+    <TextView
+        android:text="  /limahrc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9"
+        android:layout_toEndOf="@+id/botaoGit" />
+
+    <TextView
+        android:text="  limaerx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_alignBaseline="@+id/botaoGit"
+        android:layout_alignBottom="@+id/botaoGit"
+        android:layout_toEndOf="@+id/botaoInsta" />
+
+    <TextView
+        android:text="  /limaerx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_alignBaseline="@+id/botaoFace"
+        android:layout_alignBottom="@+id/botaoFace"
+        android:layout_toEndOf="@+id/botaoFace" />
+
+    <Button
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/botaoLogo"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView9" />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/botaoFace"
+        android:background="@drawable/fblogog"
+        android:elevation="15dp"
+        android:layout_marginBottom="56dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+</RelativeLayout>

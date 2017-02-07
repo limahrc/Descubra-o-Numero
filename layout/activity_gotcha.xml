@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gotcha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ericklima.descubraonumero.Gotcha">
+
+    <TextView
+        android:text="  Você concluiu o jogo, muito obrigado por participar!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView9"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:ellipsize="middle"
+        android:layout_gravity="right|center_vertical|center_horizontal|center"
+        android:layout_below="@+id/txtJogador"
+        android:layout_alignEnd="@+id/textView5"
+        android:textAlignment="center"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:text="player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtJogador"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Jogar Novamente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botaoJogar"
+        android:elevation="24dp"
+        android:layout_marginBottom="72dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_above="@+id/botaoSair"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Sobre o Jogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/botaoSobre"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_above="@+id/botaoSair"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <TextView
+        android:text="Envie-nos uma mensagem para sabermos o que você acha do Descubra o Número!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginTop="12dp"
+        android:layout_alignEnd="@+id/textView9" />
+
+    <ImageView
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/gotcha"
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Sair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botaoSair"
+        android:elevation="24dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Seu desempenho foi incrível,"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

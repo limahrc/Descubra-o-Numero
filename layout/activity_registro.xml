@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ericklima.descubraonumero.Registro">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/campoNome"
+        android:hint="Seu Nome"
+        android:maxLength="12" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnDificuldade"
+        android:layout_below="@+id/campoNome"
+        android:layout_alignStart="@+id/campoNome"
+        android:layout_marginTop="33dp"
+        android:layout_alignEnd="@+id/campoNome" />
+
+    <TextView
+        android:text="Escolha a dificuldade:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/campoNome"
+        android:layout_alignStart="@+id/spnDificuldade"
+        android:layout_alignEnd="@+id/spnDificuldade" />
+
+    <Button
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="52dp"
+        android:id="@+id/botaoMan"
+        android:background="@drawable/man"
+        android:layout_above="@+id/campoNome"
+        android:layout_alignStart="@+id/campoNome"
+        android:layout_marginStart="37dp" />
+
+    <Button
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/botaoWoman"
+        android:background="@drawable/woman"
+        android:layout_alignTop="@+id/botaoMan"
+        android:layout_alignEnd="@+id/campoNome"
+        android:layout_marginEnd="21dp" />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/botaoAvancar"
+        android:background="@drawable/flecha" />
+
+    <ImageView
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/olacr"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/imageView"
+        android:layout_width="74dp" />
+
+    <TextView
+        android:text="AVANÇAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBaseline="@+id/botaoAvancar"
+        android:layout_alignBottom="@+id/botaoAvancar"
+        android:layout_toEndOf="@+id/imageView" />
+</RelativeLayout>

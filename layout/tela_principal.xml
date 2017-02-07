@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_facil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ericklima.descubraonumero.Facil">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/loading"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:id="@+id/ivStatus" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/campoNumero"
+        android:textColorLink="@color/colorAccent"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:maxLength="3" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvNumJogados"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_alignTop="@+id/ivStatus"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView6"
+        android:layout_alignBottom="@+id/ivStatus"
+        android:fastScrollEnabled="true"
+        android:dividerHeight="0dp"
+        android:divider="@null" />
+
+    <TextView
+        android:text="Jogados:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView8"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:text="Jogue um número!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_above="@+id/campoNumero"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_marginEnd="22dp" />
+
+    <Button
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/botaoVerificar"
+        android:background="@drawable/tap"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/ivStatus"
+        android:layout_alignBottom="@+id/campoNumero"
+        android:onClick="onClick_botaoVerificar (Facil)" />
+
+    <Button
+        android:id="@+id/Jerry"
+        android:background="@drawable/croupier"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/botaoVerificar" />
+
+    <TextView
+        android:text="Ei, cuidado! É a sua última tentativa!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:id="@+id/txtCuidado"
+        android:layout_above="@+id/textView"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:text="PONTUAÇÃO: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/txtPontuacao" />
+
+    <TextView
+        android:text="Fale com o Jerry:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_alignBaseline="@+id/Jerry"
+        android:layout_alignBottom="@+id/Jerry"
+        android:layout_toStartOf="@+id/Jerry" />
+
+    <TextView
+        android:text="Tentativas: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/ivStatus"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:text="ttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTentativas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/ivStatus" />
+
+    <TextView
+        android:text="pts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPontuacao"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
